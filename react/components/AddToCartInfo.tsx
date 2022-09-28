@@ -13,8 +13,9 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
 
   const productInfo = useProduct();
   console.log("Este producto tiene esta info", productInfo);
-
+  
   const { orderForm: { items, totalizers } } = useOrderForm();
+  console.log("Totalizers", totalizers[0]?.value);
 
   return (
     <div className={classes}>
@@ -38,7 +39,13 @@ const AddToCartInfo = ({ blockClass }: { blockClass: string }) => {
       }
       <div className={`${styles.info}`}>
         <p>{items.length} productos</p>
-        <p>Total: ${totalizers[0]?.value / 100}</p>
+        <p>
+          {
+            totalizers[0]?.value ? 
+            `Total: ${totalizers[0]?.value / 100}` :
+            "Total: Por calcular"
+          }
+        </p>
       </div>
       {/* <Totalizers totalizers={totalizers[0]} /> */} {/* Valor total */}
       <ButtonGroup />
