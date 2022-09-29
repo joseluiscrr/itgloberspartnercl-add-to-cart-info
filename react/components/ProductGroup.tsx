@@ -1,3 +1,4 @@
+// ! Este comoponente no está siendo utilziado, se dejó así a fines prácticos del aprendizaje
 import React from "react";
 
 const ProductGroup = () => {
