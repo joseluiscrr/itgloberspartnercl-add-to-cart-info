@@ -1,3 +1,5 @@
-import AddToCartInfo from "./components/AddToCartInfo";
+// * LLamada y encapsulamiento del componente para protegerlo
 
-export default AddToCartInfo;
+import AddToCartInfo from "./components/AddToCartInfo"; // * Llamado del componente principal
+
+export default AddToCartInfo; // ! Se debe exportar SIEMPRE
