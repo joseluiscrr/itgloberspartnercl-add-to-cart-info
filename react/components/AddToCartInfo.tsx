@@ -2,7 +2,7 @@ import React from "react";
 import { useProduct } from "vtex.product-context";  // * Que es responsable de proporcionar datos sobre un determinado producto
 import { useOrderForm } from "vtex.order-manager/OrderForm"; // * Almacena mucha información contextual sobre el pedido que es importante para el procesamiento del pedido: artículos del pedido, datos personales del cliente, dirección de entrega, información de envío, etc
 import ButtonGroup from "./ButtonGroup"; // * Llamado al componente de botones de redirección
-import { generateBlockClass } from "@vtex/css-handles";
+import { generateBlockClass } from "@vtex/css-handles"; // * Generador de clases de vtex
 import styles from "./styles.css";
 
 
