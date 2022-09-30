@@ -53,7 +53,7 @@ Luego de eso hay que crear una carpeta llamada store en la carpeta superior del 
 }
 ```
 
-### Paso 4 - Instalar dependencies necesarias
+### Paso 4 - Declarar dependencies necesarias
 
 En el `manifest.json` se debe declarar las dependencias que van a ser utilizadas en el componente deseado. Por ejemplo:
 
@@ -67,7 +67,21 @@ En el `manifest.json` se debe declarar las dependencias que van a ser utilizadas
 ...
 ```
 
-### Paso 5 - Instalar dependencias de react
+### Paso 5 - Editar el package.json
+
+El primer `package.json` es el global, está al lado del `manifest.json`, vamos a cambiar su `version` y `name`, así:
+
+```json
+{
+  "version": "0.0.1",
+  "name": "add-to-cart-info",
+  ...
+}
+```
+
+Y repetiremos el mismo proceso con el `package.json` que hay dentro de la carpeta de react.
+
+### Paso 6 - Instalar dependencias de react
 
 Para este paso debes ingresar a la carpeta de react, y una vez allí debes ejecutar en tu consola 
 ```json
@@ -75,11 +89,11 @@ itgloberspartnercl-add-to-cart-info/react> yarn
 ```
 para que se instalen todas las dependencias necesarias
 
-### Paso 6 - Crear componente
+### Paso 7 - Crear componente
 
 En la carpeta de react se debe crear el archivo con el que se va a trabajar, en este caso : `AddToCartInfo.tsx`, luego crear su carpeta de componentes y empezar a desarrollar
 
-### Paso 7 - Ejecute un preview de la tienda
+### Paso 8 - Ejecute un preview de la tienda
 
 Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando `vtex link`.
 
