@@ -5,39 +5,13 @@ Componente que mostrará información el momento de agregar un producto al carri
 <img src="https://raw.githubusercontent.com/joseluiscrr/store-theme-ejemplo/main/assets/img/preview-add-to-cart-info.jpeg" alt="preview" />
 
 ## Configuración
-### Paso 1 - Configuración básica
+### Paso 1 - Clonación del repositorio
 
-Acceda a la [guía de configuración básica](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) de VTEX IO y siga todos los pasos indicados.
-
-Al final de la configuración, debe tener instalada la interfaz de línea de comandos de VTEX (Toolbelt) junto con un espacio de trabajo de desarrollador en el que puede trabajar.
-
-### Paso 2 - Clonación del repositorio
-
-[Clonar](https://github.com/vtex-apps/react-app-template) este repositorio en sus archivos locales para poder comenzar a trabajar en él de manera efectiva.
+[Clonar](https://github.com/vtex-apps/react-app-template) el repositorio react-app-template para empezar con lo básico en cuanto a configuración inicial, una vez en la pagina del repo de github; hay la opción que dice `Use this template`, presionar ahí y llenar la info necesaria para crear el propio repositorio
 
 Luego, acceda al directorio del repositorio usando su terminal.
 
-### Paso 3 - Instalar apps necesarias
-
-Para usar Store Framework y trabajar en el tema de su tienda, es necesario tener instalados `vtex.store-sitemap` y `vtex.store`.
-
-Ejecute `vtex list` y verifique si esas aplicaciones ya están instaladas.
-
-Si no lo están, ejecute el siguiente comando para instalarlos: `vtex install vtex.store-sitemap vtex.store -f`
-
-### Paso 4 - Desinstalar el store-theme predeterminado
-
-Al ejecutar `vtex list`, puede verificar si algún tema está instalado.
-
-Es común tener ya instalado un `vtex.store-theme` cuando inicia el proceso de desarrollo frontal de la tienda.
-
-Por lo tanto, si lo encuentra en la lista de aplicaciones, copie su nombre y utilícelo junto con el comando `vtex uninstall`. Por ejemplo:
-
-```json
-vtex uninstall vtex.store-theme
-```
-
-### Paso 5 - Editar el Manifest.json
+### Paso 2 - Editar el Manifest.json
 
 Una vez en el directorio del repositorio, es hora de editar el archivo `manifest.json` de la react app template.
 
@@ -54,7 +28,7 @@ Una vez que esté en el archivo, debe reemplazar los valores `vendor`, `name`, `
 }
 ```
 
-### Paso 6 - Configurar el builder store
+### Paso 3 - Configurar el builder store
 
 Para que el componente funcione correctamente se debe declara el builder store en el `manifest.json`, de esta manera:
 
@@ -79,7 +53,7 @@ Luego de eso hay que crear una carpeta llamada store en la carpeta superior del 
 }
 ```
 
-### Paso 7 - Instalar dependencies necesarias
+### Paso 4 - Instalar dependencies necesarias
 
 En el `manifest.json` se debe declarar las dependencias que van a ser utilizadas en el componente deseado. Por ejemplo:
 
@@ -93,7 +67,7 @@ En el `manifest.json` se debe declarar las dependencias que van a ser utilizadas
 ...
 ```
 
-### Paso 8 - Instalar dependencias de react
+### Paso 5 - Instalar dependencias de react
 
 Para este paso debes ingresar a la carpeta de react, y una vez allí debes ejecutar en tu consola 
 ```json
@@ -101,11 +75,11 @@ itgloberspartnercl-add-to-cart-info/react> yarn
 ```
 para que se instalen todas las dependencias necesarias
 
-### Paso 9 - Crear componente
+### Paso 6 - Crear componente
 
 En la carpeta de react se debe crear el archivo con el que se va a trabajar, en este caso : `AddToCartInfo.tsx`, luego crear su carpeta de componentes y empezar a desarrollar
 
-### Paso 10 - Ejecute un preview de la tienda
+### Paso 7 - Ejecute un preview de la tienda
 
 Entonces ha llegado el momento de cargar todos los cambios que realizó en sus archivos locales a la plataforma. Para eso, use el comando `vtex link`.
 
